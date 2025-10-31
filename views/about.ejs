@@ -2,10 +2,22 @@
 <html>
   <head>
     <title><%=shopName%></title>
+    <link rel="stylesheet" href="/styles/style.css">
   </head>
   <body>
     <h1>About <%=shopName%> Shop</h1>
     <p>We sell all sorts of drinks</p>
+
+    <h2>Find us at: </h2>
+    <ul>
+        <% for (const [city, details] of Object.entries(shopLocations)) { %>
+            <li>
+                Location: <%= city %> &nbsp;
+                Manager: <%= details[0] %> &nbsp;
+                Address: <%= details[1] %>
+            </li>
+        <% } %>
+    </ul>
   </body>
 </html>
 
