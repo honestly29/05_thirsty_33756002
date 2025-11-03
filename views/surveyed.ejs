@@ -16,7 +16,8 @@
 
       <h2>Your Responses</h2>
       <p><strong>Favourite Drinks Category:</strong> <%= drinkCategory %></p>
-      <p><strong>Student:</strong> <%= isStudent ? "Yes" : "No" %></p>
+      <p><strong>Student:</strong> <%= (typeof isStudent !== "undefined") ? "Yes" : "No" %></p>
+
 
       <br>
       <a href="/survey">Back to survey</a>
