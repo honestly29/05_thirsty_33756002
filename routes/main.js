@@ -21,6 +21,8 @@ router.get("/about", (req, res) => {
     res.render("about.ejs", shopData)
 });
 
+
+// Handle search
 router.get("/search", (req, res) => {
     res.render("search.ejs", shopData);
 });
@@ -31,12 +33,25 @@ router.get('/search_result', function (req, res) {
  });
 
 
- router.get("/register", (req,res) => {
+
+// Handle registration
+router.get("/register", (req,res) => {
     res.render("register.ejs",  shopData); 
 }); 
  
 router.post("/registered", (req,res) => { 
   res.send(' Hello '+ req.body.first + ' '+ req.body.last + ' you are now registered! We will send an email to you at ' + req.body.email);    
+});
+
+
+
+// Handle survey 
+router.get("/survey", (req,res) => {
+    res.render("survey.ejs", shopData);
+});
+
+router.post("/surveyed", (req,res) => {
+    res.render("surveyed.ejs", req.body);
 });
 
 

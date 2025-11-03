@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Survey Results</title>
+    <link rel="stylesheet" href="/styles/style.css">
+  </head>
+  <body>
+    <main>
+      <h1>Thank you for completing the survey!</h1>
+
+      <h2>Your Details</h2>
+      <p><strong>First Name:</strong> <%= first %></p>
+      <p><strong>Surname:</strong> <%= last %></p>
+      <p><strong>Email:</strong> <%= email %></p>
+      <p><strong>Age:</strong> <%= age %></p>
+
+      <h2>Your Responses</h2>
+      <p><strong>Favourite Drinks Category:</strong> <%= drinkCategory %></p>
+      <p><strong>Student:</strong> <%= isStudent ? "Yes" : "No" %></p>
+
+      <br>
+      <a href="/survey">Back to survey</a>
+    </main>
+  </body>
+</html>
+

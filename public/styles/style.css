@@ -84,3 +84,25 @@ button {
 button:hover {
   background-color: #005fa3;
 }
+
+
+/* Survey Styling */
+.radio-group {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.radio-group label {
+  font-weight: normal;    
+  align-self: center;
+  white-space: nowrap;
+}
+
+.checkbox-group {
+  display: flex;
+  justify-content: center;   
+  align-items: center;                    
+}

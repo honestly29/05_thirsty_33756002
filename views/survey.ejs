@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%=shopName%></title>
+    <link rel="stylesheet" href="/styles/style.css">
+  </head>
+  <body>
+    <h1><%=shopName%> Shop Survey</h1>
+    <form method="POST" action="/surveyed"> 
+        First Name:<input id="first" type="text" name="first"/> 
+
+        Last Name:<input id="last" type="text" name="last" /> 
+
+        Email:<input id="email" type="email" name="email" /> 
+
+        Age:<input id="age" type="text" name="age" /> 
+
+        <p>Which of the following drinks categories do you consume?</p>
+        <div class="radio-group">
+        <% for (const category of productCategories) { %>
+            <label>
+                <input type="radio" name="drinkCategory" value="<%= category %>" required>
+                <%= category %>
+            </label>
+        <% } %>
+        </div>
+
+        <p>Are you a student?</p>
+        <div class="checkbox-group">
+        <label>
+            <input type="checkbox" name="isStudent" value="yes">
+        </label>
+        </div>
+
+
+        <input type="submit" value="Submit" /> 
+    </form> 
+    </body>
+</html>
