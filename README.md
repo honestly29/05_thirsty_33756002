@@ -15,6 +15,9 @@ A simple Node.js and Express web application built in the Dynamic Web Applicatio
 
 No registration or database storage is required — survey results are only shown temporarily on screen.
 
+The application is deployed and running online on a virtual server.
+It is hosted permanently using the forever process manager, which keeps the Node.js app active even after the terminal session is closed.
+
 ---
 
 ## Technologies Used
@@ -38,3 +41,8 @@ No registration or database storage is required — survey results are only show
    ```
 3. **Open in browser**
    http://localhost:8000/
+
+## Access the live site:
+
+The application can be accessed at:
+http://www.doc.gold.ac.uk/usr/325/
