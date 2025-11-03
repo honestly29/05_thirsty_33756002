@@ -24,7 +24,7 @@ router.get("/about", (req, res) => {
 
 // Handle search
 router.get("/search", (req, res) => {
-    res.render("search.ejs");
+    res.render("search.ejs", shopData);
 });
 
 router.get('/search_result', function (req, res) {
@@ -33,9 +33,10 @@ router.get('/search_result', function (req, res) {
  });
 
 
+
 // Handle registration
 router.get("/register", (req,res) => {
-    res.render("register.ejs"); 
+    res.render("register.ejs",  shopData); 
 }); 
  
 router.post("/registered", (req,res) => { 
@@ -43,7 +44,8 @@ router.post("/registered", (req,res) => {
 });
 
 
-// Handle the survey 
+
+// Handle survey 
 router.get("/survey", (req,res) => {
     res.render("survey.ejs", shopData);
 });
