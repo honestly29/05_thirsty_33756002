@@ -7,13 +7,13 @@
   <body>
     <h1><%=shopName%> Shop Survey</h1>
     <form method="POST" action="/surveyed"> 
-        First Name:<input id="first" type="text" name="first"/> 
+        First Name:<input id="first" type="text" name="first" required/> 
 
-        Last Name:<input id="last" type="text" name="last" /> 
+        Last Name:<input id="last" type="text" name="last" required/> 
 
-        Email:<input id="email" type="email" name="email" /> 
+        Email:<input id="email" type="email" name="email" required/> 
 
-        Age:<input id="age" type="text" name="age" /> 
+        Age:<input id="age" type="text" name="age" required/> 
 
         <p>Which of the following drinks categories do you consume?</p>
         <div class="radio-group">
